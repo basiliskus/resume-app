@@ -1,0 +1,16 @@
+Basic:
+ [ ] import resume from json/markdown
+   [ ] markdown parser
+   [ ] markdown <-> json conversion
+   [ ] json importer
+ [ ] export resume tp html/pdf
+   [ ] create html template
+   [ ] create css styling
+   [ ] export to pdf
+   [ ] multi-css handling
+ Wishlist:
+  [ ] handle multiple resume profiles
+    [ ] pick & choose what to include in resume display
+  [ ] web form resume input
+  [ ] export to json/markdown
+
