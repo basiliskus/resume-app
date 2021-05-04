@@ -3,14 +3,14 @@ import ErrorPage from 'next/error';
 
 import { getResumeBySlug, getAllResumes } from '../../lib/api';
 import resumeMarkdownToObject from '../../lib/resumeMarkdownToObject';
-import ResumeTemplate from '../../components/resume-template';
+import Resume from '../../components/resume';
 
-export default function Resume({ resume }) {
+export default function ResumePage({ resume }) {
   const router = useRouter();
   if (!router.isFallback && !resume?.slug) {
     return <ErrorPage statusCode={404} />;
   }
-  return <ResumeTemplate document={resume.content} />;
+  return <Resume document={resume.content} />;
 }
 
 export async function getStaticProps({ params }) {
