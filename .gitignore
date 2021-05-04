@@ -1,11 +1,6 @@
 *.pdf
 *.md
 
-# ignore images for now
-*.png
-*.svg
-*.ico
-
 # dependencies
 /node_modules
 /.pnp

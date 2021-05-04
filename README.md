@@ -21,3 +21,11 @@ npm run dev
 ## Demo
 
 [https://resume-html-app.vercel.app/](https://resume-html-app.vercel.app/)
+
+## Credits
+
+Icons by [Font Awesome](https://fontawesome.com) (License: https://fontawesome.com/license). No changes made.
+
+## License
+
+© Basilio Bogado. Distributed under the [MIT License](license.md).
