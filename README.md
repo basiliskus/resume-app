@@ -20,4 +20,4 @@ npm run dev
 
 ## Demo
 
-[http://resume-app-tan.vercel.app/](http://resume-app-tan.vercel.app/)
+[https://resume-html-app.vercel.app/](https://resume-html-app.vercel.app/)
