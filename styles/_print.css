@@ -1,0 +1,62 @@
+/* Based on main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
+
+@media print {
+  body {
+    margin: 0 !important;
+    padding: 0 !important;
+    color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: ' (' attr(href) ')';
+  }
+
+  abbr[title]::after {
+    content: ' (' attr(title) ')';
+  }
+
+  a[href^='#']::after,
+  a[href^='javascript:']::after {
+    content: '';
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    break-inside: avoid-page;
+    page-break-inside: avoid;
+  }
+
+  div,
+  img {
+    break-inside: avoid-page;
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    break-after: avoid-page;
+    page-break-after: avoid;
+  }
+
+  @page {
+    margin: 0.75in 1in;
+  }
+}

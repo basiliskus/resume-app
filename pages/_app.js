@@ -1,7 +1,8 @@
-import '../styles/globals.css'
+import '../styles/_base.css';
+import '../styles/_init.css';
+import '../styles/_print.css';
+import '../styles/first.css';
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+export default function MyApp({ Component, pageProps }) {
+  return <Component {...pageProps} />;
 }
-
-export default MyApp

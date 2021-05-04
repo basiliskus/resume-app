@@ -1,0 +1,138 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  line-height: 1.5;
+  font-family: Lato;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+section {
+  padding: 20px 20px 0 20px;
+}
+
+#resume {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: auto 370px 160px auto 200px;
+  grid-template-areas:
+    'logo basics'
+    'intro work'
+    'contact work'
+    'skills work'
+    'footer education';
+  justify-content: center;
+}
+
+/* Left Column */
+
+#header {
+  grid-area: logo;
+  background-color: #3949ab;
+}
+
+#summary {
+  grid-area: intro;
+  background-color: #3949ab;
+  color: #fff;
+}
+
+#contact {
+  grid-area: contact;
+  background-color: #3949ab;
+  color: #fff;
+}
+
+#contact::before {
+  content: 'Contact me at';
+}
+
+#skills {
+  grid-area: skills;
+  background-color: #3949ab;
+  color: #fff;
+}
+
+#footer {
+  grid-area: footer;
+  background-color: #3949ab;
+}
+
+/* Right Column */
+
+#basics {
+  grid-area: basics;
+}
+
+#basics #name {
+  color: #4472c4;
+  font-family: Montserrat;
+  font-size: 3rem;
+}
+
+#basics #name div {
+  display: inline;
+}
+
+#basics #career-title {
+  color: #4472c4;
+  font-family: Montserrat;
+}
+
+#work {
+  grid-area: work;
+}
+
+#work .job {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-areas:
+    'title title'
+    'company date'
+    'details details';
+}
+
+#work .job .title {
+  grid-area: title;
+  font-weight: 600;
+}
+
+#work .job .company {
+  grid-area: company;
+}
+
+#work .job .date {
+  grid-area: date;
+  justify-self: end;
+}
+
+#work .job .details {
+  grid-area: details;
+}
+
+#education {
+  grid-area: education;
+}
+
+/* Hide */
+
+#projects,
+#location,
+#summary h2,
+#work .job .location {
+  display: none;
+}
+
+@media print {
+  @page {
+    margin: 0;
+  }
+
+  div {
+    break-inside: auto;
+    page-break-inside: auto;
+  }
+}

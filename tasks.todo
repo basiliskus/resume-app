@@ -1,16 +1,17 @@
-Basic:
- [ ] import resume from json/markdown
-   [ ] markdown parser
-   [ ] markdown <-> json conversion
-   [ ] json importer
- [ ] export resume tp html/pdf
-   [ ] create html template
-   [ ] create css styling
-   [ ] export to pdf
-   [ ] multi-css handling
+Bugs:
+  [ ] fix links by converting mdast to html (use remark-rehype or mdast-util-to-hast & hast-util-to-html)
+Tasks:
+  [ ] import resume from json/markdown
+    [x] markdown parser @done(21-05-02 13:11)
+    [ ] export to json file
+    [ ] json importer
+  [ ] export resume tp html/pdf
+    [x] create html template @done(21-05-02 13:11)
+    [x] create css styling @done(21-05-02 13:11)
+    [ ] export to pdf
+    [ ] multi-css handling
  Wishlist:
   [ ] handle multiple resume profiles
     [ ] pick & choose what to include in resume display
   [ ] web form resume input
-  [ ] export to json/markdown
 
