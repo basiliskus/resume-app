@@ -1,4 +1,5 @@
 *.pdf
+*.md
 
 # ignore images for now
 *.png
