@@ -12,9 +12,10 @@ You’ll need Node.js version 10.13 or later. The site is built with Next.js.
 
 ## How to Use
 
-After cloning the repository, run the following command:
+After cloning the repository, run the following commands:
 
 ```bash
+npm install
 npm run dev
 ```
 
