@@ -1,7 +1,5 @@
-import '../styles/_base.css';
-import '../styles/_init.css';
-import '../styles/_print.css';
-import '../styles/first.css';
+import '../styles/_global.resume.css';
+import '../styles/first.resume.css';
 
 export default function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />;
