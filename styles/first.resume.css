@@ -48,7 +48,7 @@ h2 {
 }
 
 #basics #name .first-name::after {
-  content: '\00a0';
+  content: ' ';
 }
 
 #basics #career-title::after,
@@ -191,11 +191,11 @@ h2 {
 }
 
 #projects .project .name::after {
-  content: '\00a0';
+  content: ' ';
 }
 
 #projects .project .date::after {
-  content: ':\00a0';
+  content: ': ';
 }
 
 /* Education Section */
@@ -209,15 +209,15 @@ h2 {
 }
 
 #education .degree .name::after {
-  content: ',\00a0';
+  content: ', ';
 }
 
 #education .degree .location::before {
-  content: '\00a0(';
+  content: ' (';
 }
 
 #education .degree .location::after {
-  content: '),\00a0';
+  content: '), ';
 }
 
 /* Hidden */
