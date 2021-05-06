@@ -1,17 +1,18 @@
 Bugs:
+  [ ] fix css flickering when loading any page
+  [ ] make sure html and pdf style match
   [ ] fix links by converting mdast to html (use remark-rehype or mdast-util-to-hast & hast-util-to-html)
-  [ ] fix pdf/print style
 Tasks:
   [ ] import resume from json/markdown
-    [x] markdown parser @done(21-05-02 13:11)
     [ ] export to json file
     [ ] json importer
+    [x] markdown parser @done(21-05-02 13:11)
   [ ] export resume to html/pdf
+    [ ] multi-css handling
     [x] create html template @done(21-05-02 13:11)
     [x] create css styling @done(21-05-02 13:11)
     [x] export to pdf @done(21-05-05 20:19)
-    [ ] multi-css handling
-  [ ] refactor css files with postcss
+  [ ] refactor css files using modern css & postcss
   [ ] avoid using redirect to serve pdf files
   [ ] add test to validate markdown resume format
   [ ] consider creating remark pluging for resume markdown parsing
@@ -19,4 +20,3 @@ Tasks:
   [ ] handle multiple resume profiles
     [ ] pick & choose what to include in resume display
   [ ] web form resume input
-
