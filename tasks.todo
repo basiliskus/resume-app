@@ -5,10 +5,10 @@ Tasks:
     [x] markdown parser @done(21-05-02 13:11)
     [ ] export to json file
     [ ] json importer
-  [ ] export resume tp html/pdf
+  [ ] export resume to html/pdf
     [x] create html template @done(21-05-02 13:11)
     [x] create css styling @done(21-05-02 13:11)
-    [ ] export to pdf
+    [x] export to pdf @done(21-05-05 20:19)
     [ ] multi-css handling
  Wishlist:
   [ ] handle multiple resume profiles

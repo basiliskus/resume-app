@@ -10,8 +10,26 @@ export default function Index({ allResumes }) {
         <ul className='resumes'>
           {allResumes.map((resume, index) => (
             <li key={index}>
-              <Link as={`/resumes/${resume.slug}`} href='/resumes/[slug]'>
-                <a>{resume.slug}</a>
+              {resume.slug}:&nbsp;
+              <Link
+                href='/resumes/[document]/[slug]'
+                as={`/resumes/html/${resume.slug}`}
+              >
+                <a>html</a>
+              </Link>
+              ,&nbsp;
+              <Link
+                href='/resumes/[document]/[slug]'
+                as={`/resumes/pdf/${resume.slug}`}
+              >
+                <a>pdf</a>
+              </Link>
+              ,&nbsp;
+              <Link
+                href='/resumes/[document]/[slug]'
+                as={`/resumes/md/${resume.slug}`}
+              >
+                <a>md</a>
               </Link>
             </li>
           ))}
