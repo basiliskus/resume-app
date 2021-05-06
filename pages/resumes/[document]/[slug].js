@@ -8,6 +8,11 @@ import Resume from '../../../components/resume';
 
 export default function ResumePage({ resume, document }) {
   const router = useRouter();
+
+  if (router.isFallback) {
+    return <div>Loading...</div>;
+  }
+
   if (!router.isFallback && !resume?.slug) {
     return <ErrorPage statusCode={404} />;
   }
@@ -50,5 +55,5 @@ export async function getStaticPaths() {
     );
   });
 
-  return { paths, fallback: false };
+  return { paths, fallback: true };
 }
