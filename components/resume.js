@@ -8,9 +8,12 @@ import Education from './education';
 import Projects from './projects';
 import Footer from './footer';
 
+import styles from '../styles/first.resume.css';
+
 export default function Resume({ document }) {
   return (
     <div id='resume'>
+      <style jsx>{styles}</style>
       <Header />
       <Basics name={document.name} content={document.basics} />
       <Contact content={document.basics} />

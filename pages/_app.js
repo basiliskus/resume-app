@@ -1,6 +1,15 @@
-import '../styles/_global.resume.css';
-import '../styles/first.resume.css';
+import { useRouter } from 'next/router';
+
+import AppStyles from '../components/app-global-styles';
 
 export default function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+  const router = useRouter();
+  const isResume = router.pathname.startsWith('/resumes');
+
+  return (
+    <>
+      <Component {...pageProps} />
+      <AppStyles isResume={isResume} />
+    </>
+  );
 }
