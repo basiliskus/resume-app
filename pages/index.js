@@ -12,22 +12,22 @@ export default function Index({ allResumes }) {
             <li key={index}>
               {resume.slug}:&nbsp;
               <Link
-                href='/resumes/[document]/[slug]'
-                as={`/resumes/html/${resume.slug}`}
+                href='/resume/[document]/[slug]'
+                as={`/resume/html/${resume.slug}`}
               >
                 <a>html</a>
               </Link>
               ,&nbsp;
               <Link
-                href='/resumes/[document]/[slug]'
-                as={`/resumes/pdf/${resume.slug}`}
+                href='/resume/[document]/[slug]'
+                as={`/resume/pdf/${resume.slug}`}
               >
                 <a>pdf</a>
               </Link>
               ,&nbsp;
               <Link
-                href='/resumes/[document]/[slug]'
-                as={`/resumes/md/${resume.slug}`}
+                href='/resume/[document]/[slug]'
+                as={`/resume/md/${resume.slug}`}
               >
                 <a>md</a>
               </Link>

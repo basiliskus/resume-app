@@ -4,7 +4,7 @@ import AppStyles from '../components/app-global-styles';
 
 export default function MyApp({ Component, pageProps }) {
   const router = useRouter();
-  const isResume = router.pathname.startsWith('/resumes');
+  const isResume = router.pathname.startsWith('/resume');
 
   return (
     <>

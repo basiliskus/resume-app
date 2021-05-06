@@ -16,7 +16,7 @@ export default function ResumePage({ resume, document }) {
 
   if (document === 'pdf') {
     useEffect(() => {
-      router.push(`/pdfs/${resume.slug}.pdf`);
+      router.push(`/pdf/${resume.slug}.pdf`);
     }, []);
   }
 
