@@ -14,7 +14,7 @@
   },
   "scripts": {
     "dev": "sass styles:styles/css && next dev",
-    "build": "sass styles:styles/css -- -s compressed && next build",
+    "build": "sass styles:styles/css && next build",
     "start": "next start",
     "build-export": "next build && next export"
   },
