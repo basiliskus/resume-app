@@ -19,6 +19,8 @@
   },
   "devDependencies": {
     "next-transpile-modules": "^6.4.1",
-    "styled-jsx": "^3.4.4"
+    "sass": "^1.32.12",
+    "styled-jsx": "^3.4.4",
+    "styled-jsx-plugin-dart-sass": "^1.0.1"
   }
 }
