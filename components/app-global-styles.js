@@ -1,5 +1,5 @@
-import homeStyles from '../styles/globals.css';
-import resumeStyles from '../styles/globals.resume.css';
+import homeStyles from '../styles/globals.css?type=global';
+import resumeStyles from '../styles/globals.resume.css?type=global';
 
 export default function AppStyles({ isResume }) {
   if (isResume) {

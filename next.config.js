@@ -16,7 +16,7 @@ module.exports = withTM({
         {
           loader: require('styled-jsx/webpack').loader,
           options: {
-            type: 'global',
+            type: (fileName, options) => options.query.type || 'scoped',
           },
         },
       ],
