@@ -1,11 +1,22 @@
 {
   "name": "resume-app",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.0",
+  "description": "Convert markdown resume file in a specific format to html and pdf, using a template and given style",
+  "author": "Basilio Bogado",
+  "license": "MIT",
+  "homepage": "https://github.com/basiliskus/resume-app",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/basiliskus/resume-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/basiliskus/resume-app/issues"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "build-export": "next build && next export"
   },
   "dependencies": {
     "gray-matter": "^4.0.3",
