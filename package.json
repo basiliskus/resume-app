@@ -13,8 +13,8 @@
     "url": "https://github.com/basiliskus/resume-app/issues"
   },
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "sass styles:styles/css && next dev",
+    "build": "sass styles:styles/css -- -s compressed && next build",
     "start": "next start",
     "build-export": "next build && next export"
   },
