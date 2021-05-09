@@ -11,24 +11,15 @@ export default function Index({ allResumes }) {
           {allResumes.map((resume, index) => (
             <li key={index}>
               {resume.slug}:&nbsp;
-              <Link
-                href='/resume/[document]/[slug]'
-                as={`/resume/html/${resume.slug}`}
-              >
+              <Link href={`/resume/html/${resume.slug}`}>
                 <a>html</a>
               </Link>
               ,&nbsp;
-              <Link
-                href='/resume/[document]/[slug]'
-                as={`/resume/pdf/${resume.slug}`}
-              >
+              <Link href={`/pdf/${resume.slug}.pdf`}>
                 <a>pdf</a>
               </Link>
               ,&nbsp;
-              <Link
-                href='/resume/[document]/[slug]'
-                as={`/resume/md/${resume.slug}`}
-              >
+              <Link href={`/resume/md/${resume.slug}`}>
                 <a>md</a>
               </Link>
             </li>
