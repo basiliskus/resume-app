@@ -53,7 +53,7 @@ Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ac lorem eros. Ut sagittis lorem id massa rhoncus dignissim. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In sed diam ullamcorper, faucibus enim a, vestibulum massa. Praesent tristique sit amet nisi eget tempor. Aenean maximus urna acerat interdum varius.
 
 <!-- include: default -->
-### Lorem ipsum 2 | Summer 2020 | Personal
+### Lorem ipsum 2 | Summer 2019 | Personal
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ac lorem eros. Ut sagittis lorem id massa rhoncus dignissim. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In sed diam ullamcorper, faucibus enim a, vestibulum massa. Praesent tristique sit amet nisi eget tempor. Aenean maximus urna acerat interdum varius.
 
