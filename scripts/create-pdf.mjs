@@ -3,8 +3,6 @@ import puppeteer from 'puppeteer';
 
 import { getResumeSlugs } from '../lib/api.mjs';
 
-const getAbsoluteURL = (path) => {
-  const baseURL = process.env.VERCEL_URL
     ? `https://${process.env.VERCEL_URL}`
     : 'http://localhost:3000';
   return baseURL + path;
