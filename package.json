@@ -14,9 +14,9 @@
   },
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "start": "run-p next-start create-pdfs",
-    "next-start": "next start",
+    "build": "run-s next-build create-pdfs",
+    "start": "next start",
+    "next-build": "next build",
     "build-export": "next build && next export",
     "create-pdfs": "node scripts/create-pdf.mjs"
   },
