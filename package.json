@@ -13,10 +13,12 @@
     "url": "https://github.com/basiliskus/resume-app/issues"
   },
   "scripts": {
-    "dev": "sass styles:styles/css && next dev",
-    "build": "sass styles:styles/css && next build",
-    "start": "next start",
-    "build-export": "next build && next export"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "run-p next-start create-pdfs",
+    "next-start": "next start",
+    "build-export": "next build && next export",
+    "create-pdfs": "node scripts/create-pdf.mjs"
   },
   "dependencies": {
     "gray-matter": "^4.0.3",
@@ -30,6 +32,7 @@
   },
   "devDependencies": {
     "next-transpile-modules": "^6.4.1",
+    "npm-run-all": "^4.1.5",
     "sass": "^1.32.12",
     "styled-jsx": "^3.4.4",
     "styled-jsx-plugin-dart-sass": "^1.0.1"

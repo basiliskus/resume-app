@@ -1,10 +1,8 @@
-import { useEffect } from 'react';
 import { useRouter } from 'next/router';
 import ErrorPage from 'next/error';
 
 import { getResumeBySlug, getAllResumes } from '../../../lib/api';
 import resumeMarkdownToObject from '../../../lib/resumeMarkdownToObject';
-import resumeHtmlToPdf from '../../../lib/resumeHtmlToPdf';
 import Resume from '../../../components/resume';
 
 export default function ResumePage({ resume, document }) {
@@ -15,28 +13,27 @@ export default function ResumePage({ resume, document }) {
   }
 
   if (document === 'pdf') {
-    useEffect(() => {
-      router.push(`/pdf/${resume.slug}.pdf`);
-    }, []);
+    return null;
   }
 
   if (document === 'md') {
     return <pre>{resume.content}</pre>;
   }
 
-  return <Resume document={resume.parsedContent} />;
+  if (document === 'html') {
+    return <Resume document={resume.parsedContent} />;
+  }
 }
 
 export async function getStaticProps({ params }) {
   const resume = getResumeBySlug(params.slug, ['slug', 'content']);
   const parsedContent = resumeMarkdownToObject(resume.content || '');
 
-  if (params.document === 'pdf') {
-    await resumeHtmlToPdf(<Resume document={parsedContent} />, params.slug);
-  }
-
   return {
-    props: { resume: { ...resume, parsedContent }, document: params.document },
+    props: {
+      resume: { ...resume, parsedContent },
+      document: params.document,
+    },
   };
 }
 
