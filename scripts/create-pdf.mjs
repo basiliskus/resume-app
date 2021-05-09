@@ -11,7 +11,7 @@ const getAbsoluteURL = (path) => {
 };
 
 const localPdfFolderPath = './public/pdf';
-// const pdfPath = join(process.cwd(), `/public/pdf/${resume.slug}.pdf`);
+console.log(`Server trying to connect: ${getAbsoluteURL('/')}`);
 
 async function generatePdf(slug) {
   const url = getAbsoluteURL(`/resume/html/${slug}`);
