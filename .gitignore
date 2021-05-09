@@ -1,7 +1,5 @@
 *.pdf
 *.md
-*.css
-*.css.map
 
 # dependencies
 /node_modules

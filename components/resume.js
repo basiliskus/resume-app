@@ -8,7 +8,7 @@ import Education from './education';
 import Projects from './projects';
 import Footer from './footer';
 
-import styles from '../styles/css/default.resume.css?type=global';
+import styles from '../styles/default.resume.scss?type=global';
 
 export default function Resume({ document }) {
   return (
