@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
 import { getAllResumes } from '../lib/api';
-import Layout from '../components/layout';
+import Layout from 'components/layout';
 
 export default function Index({ allResumes }) {
   return (

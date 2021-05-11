@@ -1,9 +1,9 @@
 import { useRouter } from 'next/router';
 import ErrorPage from 'next/error';
 
-import { getResumeBySlug, getAllResumes } from '../../../lib/api';
-import resumeMarkdownToObject from '../../../lib/resumeMarkdownToObject';
-import Resume from '../../../components/resume';
+import { getResumeBySlug, getAllResumes } from 'lib/api';
+import resumeMarkdownToObject from 'lib/resumeMarkdownToObject';
+import Resume from 'components/resume';
 
 export default function ResumePage({ resume, document }) {
   const router = useRouter();
