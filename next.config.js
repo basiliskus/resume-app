@@ -5,9 +5,7 @@ const withTM = require('next-transpile-modules')([
 ]);
 
 module.exports = withTM({
-  future: {
-    webpack5: true,
-  },
+  webpack5: true,
   webpack(config, { defaultLoaders }) {
     config.module.rules.push({
       test: /\.(scss|css)$/,
