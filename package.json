@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.23.9",
-    "@babel/runtime-corejs2": "^7.23.9",
+    "@babel/runtime-corejs2": "^7.26.10",
     "gray-matter": "^4.0.3",
     "next": "^14.1.1",
     "puppeteer": "^9.1.1",
